@@ -47,7 +47,6 @@ void loop(){
 }
 
 void vTask1(void *pvParameters){
-  
   while(1){
     enviaInformacao(1);
     vTaskDelay(10);
@@ -55,7 +54,6 @@ void vTask1(void *pvParameters){
 }
 
 void vTask2(void * pvParameters){
-
   while(1){
     enviaInformacao(2);
     // If no delay here, starvation occurs (only task 2 will be executed because has high priority)
